@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ar.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Kyrillos | Ayman</title>
+</head>
+<body>
+  <div class="translatearen">
+   <a href="ar.html" class="ar" id="ar">Ar</a>  |  <a href="index.html" class="en" id="en">En</a>
+  </div>
+<div class="contact-form" id="contact-form">
+    <form id="my-form" action="https://formspree.io/f/xlezypnd" method="POST">
+      <div class="formupertext">
+        <h1 id="my-form-status">اختار الطريقة التي تريد إرسال رسالة بها</h1>
+      </div>
+     <div class="form">
+      <input type="button" id="knowbtn" class="chosemessagetype" value="ارسال رساله مع معرفه الراسل" onclick="knowrange()">
+      <div class="form">
+        <input type="button" id="unknowbtn" class="chosemessagetype" value="ارسال رساله مجهوله" onclick="unknowrange()">
+     </div>
+     <div class="form">
+      <input type="text" style="width: 80%; height: 40px; margin-bottom: 10px; padding: 5px; opacity: 0;" name="Name" id="name" placeholder="اسمك" required>
+     </div>
+  <div class="form">
+    <textarea name="Message" placeholder="رسالتك" id="message" cols="30" rows="10" required></textarea>
+</div>
+  <button type="submit" id="my-form-button" class="my-form-button">ارسال</button><br>
+  <input type="button" value="اعاده" onclick="restartbage()" class="reset" id="resetbtn">
+  
+</form>
+<script src="ar.js"></script>
+</div>
+</body>
+</html>
